@@ -1,5 +1,48 @@
 # Changelog
 
+## [2026.10.19](https://github.com/jdx/mise/releases/tag/v2026.10.19) - 2026-10-23
+
+### 🚀 Features
+
+- **(config)** expose mise_config_dir to templates by @jdx in [#14886](https://github.com/jdx/mise/pull/14886)
+- **(lsp)** send semantic tokens for tasks, tools, env vars and templates by @jdx in [#14918](https://github.com/jdx/mise/pull/14918)
+
+### 🐛 Bug Fixes
+
+- **(lock)** rebuild lockfiles completely by default by @jdx in [#14893](https://github.com/jdx/mise/pull/14893)
+- **(pipx)** list git+ssh github.com sources over ssh when GitHub can't see them by @jdx in [#14905](https://github.com/jdx/mise/pull/14905)
+- **(task)** apply extended template usage to file tasks by @jdx in [#14888](https://github.com/jdx/mise/pull/14888)
+
+### 📚 Documentation
+
+- tell agents not to edit the vendored aqua registry by @jdx in [#14910](https://github.com/jdx/mise/pull/14910)
+
+### 🧪 Testing
+
+- update e2e expectations after version validation moved earlier by @jdx in [#14920](https://github.com/jdx/mise/pull/14920)
+
+### 📦️ Dependency Updates
+
+- bump ctutils to 0.4.5 by @jdx in [#14887](https://github.com/jdx/mise/pull/14887)
+- update aube to v2.8.2 by @renovate[bot] in [#14889](https://github.com/jdx/mise/pull/14889)
+- update rust crate clx to v3.0.5 by @renovate[bot] in [#14890](https://github.com/jdx/mise/pull/14890)
+
+### Ci
+
+- retry snapcraft upload on transient store errors by @jdx in [#14909](https://github.com/jdx/mise/pull/14909)
+
+### Security
+
+- **(backend)** keep untrusted values out of subprocess arguments and the project directory by @jdx in [#14896](https://github.com/jdx/mise/pull/14896)
+- **(backend)** keep archive contents and release asset names inside the install directory by @jdx in [#14895](https://github.com/jdx/mise/pull/14895)
+- **(backend)** validate versions and names that become paths or URL segments by @jdx in [#14901](https://github.com/jdx/mise/pull/14901)
+- **(backend)** tighten SLSA signer and GitHub attestation checks by @jdx in [#14904](https://github.com/jdx/mise/pull/14904)
+- **(completion)** stop shell completion from running untrusted task code by @jdx in [#14898](https://github.com/jdx/mise/pull/14898)
+- **(hooks)** render hook commands once and keep templates out of written versions by @jdx in [#14897](https://github.com/jdx/mise/pull/14897)
+- **(install)** enforce pinned checksums and node signatures instead of falling back by @jdx in [#14899](https://github.com/jdx/mise/pull/14899)
+- **(lockfile)** stop lockfiles, tool stubs and the task cache from reaching outside the repo by @jdx in [#14906](https://github.com/jdx/mise/pull/14906)
+- **(task)** close sandbox escapes in --allow-write, --deny-net and --deny-write, and OCI whiteouts by @jdx in [#14911](https://github.com/jdx/mise/pull/14911)
+
 ## [2026.10.18](https://github.com/jdx/mise/releases/tag/v2026.10.18) - 2026-10-23
 
 ### 🚀 Features
